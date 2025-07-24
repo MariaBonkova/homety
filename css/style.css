@@ -13,6 +13,7 @@ body {
 
 .logo {
   height: 100%;
+  cursor: pointer;
 }
 .logo-img {
   max-width: 100%;
@@ -34,6 +35,11 @@ body {
   line-height: 1;
 }
 
+.navbar_item a:hover,
+.navbar_item a:active {
+  cursor: pointer;
+}
+
 .header {
   max-width: 100%;
   padding: 1.5rem 5.4rem;
@@ -48,6 +54,7 @@ body {
   background-color: #fff;
   border-radius: 50px;
   letter-spacing: -0.01rem;
+  cursor: pointer;
 }
 .grid {
   display: grid;
