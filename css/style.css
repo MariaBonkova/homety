@@ -1,16 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: #131417;
-}
-body {
-  font-family: "Manrope", sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  max-width: 100%;
-}
-
 .logo {
   height: 100%;
   cursor: pointer;
@@ -19,49 +6,85 @@ body {
   max-width: 100%;
   display: inline-block;
 }
-.navbar_items {
+.navbar-items {
   justify-content: space-between;
   align-items: flex-start;
+  gap: 6rem;
 }
-.navbar_item {
+.navbar-item {
   list-style: none;
   font-size: 0.7rem;
   text-transform: uppercase;
 }
-.navbar_item a:link,
-.navbar_item a:visited {
+.navbar-item a:link,
+.navbar-item a:visited {
   text-decoration: none;
   font-weight: 700;
   line-height: 1;
 }
 
-.navbar_item a:hover,
-.navbar_item a:active {
+.navbar-item a:hover,
+.navbar-item a:active {
   cursor: pointer;
 }
 
 .header {
   max-width: 100%;
-  padding: 1.5rem 5.4rem;
+  padding: 1.49rem 5.4rem;
 }
 
-.btn_contact_us {
+.btn-contact-us {
   font-family: "Lexend", sans-serif;
-  font-size: 1rem;
+  font-size: 0.84rem;
   font-weight: 400;
   text-transform: uppercase;
   padding: 0.3rem 0.8rem;
   background-color: #fff;
+  border: solid 1px;
   border-radius: 50px;
   letter-spacing: -0.01rem;
   cursor: pointer;
 }
-.grid {
-  display: grid;
+
+/*section homepage*/
+
+.section-homepage {
+  margin: 14rem 0 7.2rem 0;
+  gap: 5rem;
 }
-.grid--two--col {
-  grid-template-columns: repeat(2, 1fr);
+.homepage-left-side {
+  width: 100%;
 }
-.grid--tree--col {
-  grid-template-columns: repeat(3, 1fr);
+
+.homepage-image {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  margin-right: 2rem;
+  margin-bottom: 1.4rem;
+}
+
+.homepage-header {
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.36;
+  margin-bottom: 2rem;
+}
+.homepage-left-side a:link,
+.homepage-left-side a:visited {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-family: "Lexend", sans-serif;
+  text-decoration: none;
+}
+.homepage-left-side a:hover,
+.homepage-left-side a:active {
+  cursor: pointer;
+}
+
+.homepage-right-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 45rem;
 }

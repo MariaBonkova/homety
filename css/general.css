@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #131417;
+}
+body {
+  font-family: "Manrope", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  max-width: 100%;
+}
+
+.container {
+  padding: 1.6rem 5.4rem;
+}
+
+.grid {
+  display: grid;
+}
+.grid--two--col {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--tree--col {
+  grid-template-columns: repeat(3, 1fr);
+}
