@@ -95,6 +95,7 @@
 /*section-hero*/
 .section-hero {
   max-width: 100%;
+  margin-bottom: 8.4rem;
 }
 .hero-image {
   width: 100%;
@@ -106,7 +107,7 @@
 }
 .tags {
   display: flex;
-  padding-left: 5rem;
+  padding-left: 5em;
   gap: 0.5rem;
 }
 .tag-white p {
@@ -137,4 +138,43 @@
   font-size: 0.8rem;
   line-height: 1.5;
   font-weight: 200;
+}
+
+/*section-design*/
+
+.section-design {
+  padding: 1.6rem 5.4rem;
+  border-bottom: solid 0.1em #777;
+}
+.design-header {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 40%;
+  font-size: 2.8rem;
+  font-weight: 300;
+  margin-bottom: 7rem;
+}
+
+.design-image {
+  width: 50%;
+}
+.design-img {
+  width: 40rem;
+}
+
+.number {
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1.36rem;
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+}
+.design-content {
+  max-width: 50%;
+}
+
+.design-head {
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 1.5;
 }
