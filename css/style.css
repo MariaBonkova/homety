@@ -146,13 +146,18 @@
   padding: 1.6rem 5.4rem;
   border-bottom: solid 0.1em #777;
 }
+.design-list {
+  padding-bottom: 2.4rem;
+  padding-top: 2.4rem;
+  border-bottom: solid 1px #ecedf1;
+}
+
 .design-header {
-  display: grid;
-  grid-template-columns: 1fr;
   max-width: 40%;
   font-size: 2.8rem;
   font-weight: 300;
-  margin-bottom: 7rem;
+  margin-bottom: 4.5rem;
+  line-height: 1.36;
 }
 
 .design-image {
@@ -161,20 +166,23 @@
 .design-img {
   width: 40rem;
 }
-
-.number {
-  font-size: 1.3rem;
-  font-weight: 300;
-  line-height: 1.36rem;
-  margin-left: 2rem;
-  margin-top: 0.5rem;
-}
 .design-content {
-  max-width: 50%;
+  align-items: start;
 }
 
 .design-head {
   font-size: 2.4rem;
   font-weight: 300;
-  line-height: 1.5;
+}
+
+.number {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.36rem;
+  margin-right: 2rem;
+}
+
+.design-text {
+  margin-left: 4rem;
+  color: #777;
 }
