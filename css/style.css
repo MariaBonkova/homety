@@ -144,10 +144,10 @@
 
 .section-design {
   padding: 1.6rem 5.4rem;
-  border-bottom: solid 0.1em #777;
+  margin-bottom: 4rem;
 }
 .design-list {
-  padding-bottom: 2.4rem;
+  padding-bottom: 2rem;
   padding-top: 2.4rem;
   border-bottom: solid 1px #ecedf1;
 }
@@ -158,6 +158,11 @@
   font-weight: 300;
   margin-bottom: 4.5rem;
   line-height: 1.36;
+}
+.design-text {
+  margin-left: 4rem;
+  color: #777;
+  margin-bottom: 8rem;
 }
 
 .design-image {
@@ -182,7 +187,82 @@
   margin-right: 2rem;
 }
 
-.design-text {
-  margin-left: 4rem;
+/* section planning*/
+
+.section-planning {
+  max-width: 100%;
+  background-color: #131417;
+}
+
+.partners-list {
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(6, 1fr); /* 12 equal columns */
+  padding: 10rem 5rem;
+}
+
+.partner-image {
+  width: 100%;
+  border: solid 1px #4d4e50;
+  text-align: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+.planning-content {
+  gap: 8rem;
+}
+
+.planning-left-side {
+  width: 100%;
+}
+
+.planning-header,
+.planning-price {
+  color: #fff;
+}
+.planning-header {
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.36;
+  margin-bottom: 2rem;
+}
+
+.planning-price {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 300;
+  margin-bottom: 5rem;
+}
+
+.planning-price span {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-left: 0.5rem;
+}
+
+.large-decorative {
+  font-size: 6rem;
+  font-weight: 300;
+  color: #ecedf1;
+  align-items: start;
+}
+.planinig-d-t {
+  font-size: 0.9rem;
+  line-height: 1.4;
   color: #777;
+  margin-right: 2rem;
+}
+.btn-contact-us-white {
+  font-family: "Lexend", sans-serif;
+  font-size: 0.84rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 0.8rem 1rem;
+  border: solid 1px #fff;
+  background-color: #131417;
+  color: #fff;
+  border-radius: 50px;
+  letter-spacing: -0.01rem;
+  cursor: pointer;
 }
