@@ -302,7 +302,7 @@
   max-width: 100%;
 }
 .new-york-dream-left-side {
-  margin: 5rem;
+  margin: 5rem 5rem 0 5rem;
 }
 .new-york-dream-links {
   display: flex;
@@ -332,9 +332,16 @@
 }
 
 .new-york-image-container {
-  width: 100%;
   height: 100%;
   overflow: hidden;
+}
+.new-york-image-container p {
+  font-size: 0.95rem;
+  color: #777;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.4;
+  margin-top: 1.6rem;
 }
 
 .new-york-left-image {
@@ -345,16 +352,67 @@
   height: 50%;
   object-fit: cover;
   border-radius: 45rem;
-  transition: all 0.3s ease;
 }
 .new-york-left-image:hover {
   transform: scale(1.1);
+  transition: all 0.3s ease-out;
 }
 
-.new-york-dream-right-side {
-  width: 100%;
+.new-york-right-image {
+  display: inline;
+  width: 110%;
   height: 100%;
 }
 
-.text {
+/*section-project */
+.section-project {
+  background-color: #ecedf1;
+  max-width: 100%;
+  padding: 10rem 5rem;
+}
+.project-text {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 0.1px #777;
+}
+.title-1 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.36;
+}
+
+.projects-images-containers {
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 8rem;
+  column-gap: 2rem;
+  margin-top: 2rem;
+  object-fit: cover;
+}
+.project-image {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1.5rem;
+
+  transition: all 0.3s ease;
+}
+
+.project-image:hover {
+  transform: scale(1.1);
+}
+
+.project-tags {
+  display: flex;
+  justify-content: space-between;
+}
+.project-tags p {
+  font-size: 1.2rem;
+}
+
+.icon-arrow {
+  display: block;
+  margin-left: 100%;
+}
+
+.arrow {
+  font-size: 5rem;
 }
