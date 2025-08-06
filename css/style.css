@@ -417,35 +417,6 @@
   font-size: 1.2rem;
 }
 
-.icon-arrow {
-  margin: 0 auto;
-  position: relative; /* за позициониране на псевдоелемента */
-  cursor: pointer;
-}
-.icon-arrow::after {
-  content: "see all";
-  position: absolute;
-  top: 100%; /* показва надписа отгоре на стрелката */
-  left: 50%;
-  transform: translateX(-50%) translateY(20px);
-  opacity: 0;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  color: #333; /* цвят на текста */
-  font-size: 1rem;
-  font-weight: 300;
-  white-space: nowrap;
-  pointer-events: none;
-}
-
-.icon-arrow:hover::after {
-  opacity: 1;
-  transform: translateX(-50%) translateY(0);
-}
-
-.arrow {
-  font-size: 5rem;
-}
-
 /*section experts*/
 .section-experts {
   padding: 10rem 5rem;
@@ -458,30 +429,40 @@
   font-weight: 300;
   line-height: 1.36;
 }
+.expert-image-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .expert-image {
-  width: 10rem;
-  height: 10rem;
+  width: 8rem;
+  height: 8rem;
 }
 .expert-image-dog {
-  width: 15rem;
-  height: 15rem;
+  width: 20rem;
+  height: 20rem;
 }
 
 .experts-images-container {
   display: grid;
-  grid-auto-columns: 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(2, auto);
   gap: 2rem;
-  grid-template-areas: "expert1  ";
+  grid-template-areas:
+    "expert1 . expert2 . expert7  expert8  expert10"
+    "expert3 expert4 expert5 expert6 expert7 . expert9";
 }
 
+.empty-space {
+  /* не слагай съдържание */
+}
 #expert1 {
   grid-area: expert1;
 }
 
 #expert2 {
   grid-area: expert2;
-} /*
+}
 #expert3 {
   grid-area: expert3;
 }
@@ -500,9 +481,12 @@
 #expert8 {
   grid-area: expert8;
 }
-#expret9 {
+#expert9 {
   grid-area: expert9;
-}*/
+}
+#expert10 {
+  grid-area: expert10;
+}
 
 /*section-dream*/
 
@@ -562,7 +546,6 @@
   width: 40rem;
   height: 30rem;
 }
-
 .small {
   width: 20rem;
   height: 15rem;

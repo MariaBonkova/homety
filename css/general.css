@@ -38,8 +38,43 @@ body {
   border-radius: 50%; /* Ако ion-icon поддържа color */
   pointer-events: none; /* за да не пречи на мишката в невидимо състояние */
 }
+
 .instagram-container:hover .instagram {
   opacity: 0.5;
   cursor: pointer;
   pointer-events: auto;
+}
+
+/*arrow*/
+.icon-arrow {
+  margin: 0 auto;
+  position: relative; /* за позициониране на псевдоелемента */
+  cursor: pointer;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: -5rem;
+}
+.icon-arrow::after {
+  content: "See all";
+  position: absolute;
+  top: 100%; /* показва надписа отгоре на стрелката */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.icon-arrow:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.arrow {
+  font-size: 5rem;
 }
