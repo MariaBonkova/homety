@@ -24,3 +24,22 @@ body {
 .grid--tree--col {
   grid-template-columns: repeat(3, 1fr);
 }
+
+.instagram {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 1rem;
+  border-radius: 50%; /* Ако ion-icon поддържа color */
+  pointer-events: none; /* за да не пречи на мишката в невидимо състояние */
+}
+.instagram-container:hover .instagram {
+  opacity: 0.5;
+  cursor: pointer;
+  pointer-events: auto;
+}

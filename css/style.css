@@ -332,6 +332,7 @@
 }
 
 .new-york-image-container {
+  position: relative;
   height: 100%;
   overflow: hidden;
 }
@@ -346,18 +347,21 @@
 
 .new-york-left-image {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   width: 50%;
   height: 50%;
   object-fit: cover;
   border-radius: 45rem;
+  transition: transform 0.5s ease;
 }
-.new-york-left-image:hover {
-  transform: scale(1.1);
-  transition: all 0.3s ease-out;
+.new-york-image-container:hover .new-york-left-image {
+  transform: scale(1.07); /* леко увеличаване при hover */
 }
 
+.new-york-dream-right-side {
+  position: relative;
+  display: inline-block;
+}
 .new-york-right-image {
   display: inline;
   width: 110%;
@@ -382,18 +386,23 @@
 }
 
 .projects-images-containers {
+  position: relative;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 8rem;
   column-gap: 2rem;
   margin-top: 2rem;
   object-fit: cover;
 }
+.project-image-container {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
 .project-image {
   width: 100%;
   height: 100%;
   margin-bottom: 1.5rem;
-
-  transition: all 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 .project-image:hover {
@@ -409,10 +418,177 @@
 }
 
 .icon-arrow {
-  display: block;
-  margin-left: 100%;
+  margin: 0 auto;
+  position: relative; /* за позициониране на псевдоелемента */
+  cursor: pointer;
+}
+.icon-arrow::after {
+  content: "see all";
+  position: absolute;
+  top: 100%; /* показва надписа отгоре на стрелката */
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  color: #333; /* цвят на текста */
+  font-size: 1rem;
+  font-weight: 300;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.icon-arrow:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
 }
 
 .arrow {
   font-size: 5rem;
+}
+
+/*section experts*/
+.section-experts {
+  padding: 10rem 5rem;
+}
+
+.expert-text {
+  margin-top: 1.2rem;
+  margin-bottom: 5rem;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.36;
+}
+.expert-image {
+  width: 10rem;
+  height: 10rem;
+}
+.expert-image-dog {
+  width: 15rem;
+  height: 15rem;
+}
+
+.experts-images-container {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 2rem;
+  grid-template-areas: "expert1  ";
+}
+
+#expert1 {
+  grid-area: expert1;
+}
+
+#expert2 {
+  grid-area: expert2;
+} /*
+#expert3 {
+  grid-area: expert3;
+}
+#expert4 {
+  grid-area: expert4;
+}
+#expert5 {
+  grid-area: expert5;
+}
+#expert6 {
+  grid-area: expert6;
+}
+#expert7 {
+  grid-area: expert7;
+}
+#expert8 {
+  grid-area: expert8;
+}
+#expret9 {
+  grid-area: expert9;
+}*/
+
+/*section-dream*/
+
+.section-dream {
+  background-color: #142218;
+  width: 100%;
+  height: 100%;
+  padding: 7.2rem 5rem;
+  gap: 5rem;
+  margin-bottom: 10rem;
+}
+.dream-content {
+  justify-content: center;
+  align-items: center;
+}
+.dream-content h2 {
+  color: #ecedf1;
+  line-height: 1.36;
+  font-size: 2.1rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+.dream-content p {
+  color: #ecedf1;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.4;
+  margin-bottom: 5rem;
+}
+.btn-green {
+  background-color: #142218;
+  color: #ecedf1;
+  padding: 1rem 2rem;
+}
+
+.dream-image {
+  width: 100%;
+}
+.dream-image img {
+  width: 38rem;
+  height: 20rem;
+}
+
+/*section-hacks*/
+.section-hacks {
+  margin-bottom: 10rem;
+}
+.hachs {
+  gap: 2rem;
+}
+.hachs-images {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+.large {
+  width: 40rem;
+  height: 30rem;
+}
+
+.small {
+  width: 20rem;
+  height: 15rem;
+}
+
+.trend-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.kitchen-image,
+.chair-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.trend-image:hover,
+.kitchen-image:hover,
+.chair-image:hover {
+  transform: scale(1.07) translateY(-5px);
+}
+
+.hachs-text {
+  font-size: 1.2rem;
+  margin-top: 1rem;
 }
