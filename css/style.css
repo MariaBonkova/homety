@@ -602,3 +602,115 @@
 .visit-image:hover {
   transform: scale(1.07) translateY(-5px);
 }
+/*footer*/
+
+.footer-container {
+  background-color: #131417;
+  color: #ecedf1;
+}
+
+.logo {
+  width: 7rem;
+  height: 7rem;
+  gap: 4rem;
+}
+
+.icon-list a,
+.icon-list ion-icon,
+.email,
+.footer-left-side,
+.footer-addresses,
+.address-header {
+  color: #fff !important;
+}
+.menu-list {
+  margin-bottom: 4rem;
+}
+
+.menu-item li,
+.menu-item a {
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: "Lexed", sans-serif;
+  text-transform: uppercase;
+  list-style: none;
+  color: #777;
+}
+
+.icon-list ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-icon {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.menu-item a:link {
+  text-decoration: none;
+  color: #ecedf1;
+}
+
+.footer-addresses {
+  width: 200%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem; /* разстояние между колоните */
+  justify-content: space-between;
+  margin-bottom: 6rem;
+}
+.decorative-text {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: #777;
+  white-space: normal; /* позволява пренасяне на ред */
+  max-width: 12rem; /* примерно ограничение на ширината, за да излезе на два реда */
+  word-wrap: break-word;
+}
+
+.address-header {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  margin-bottom: 1rem;
+}
+.copy-right {
+  display: inline;
+}
+strong {
+  color: #ecedf1;
+  text-decoration: underline;
+}
+.footer-right-side {
+  padding: 4rem 2rem;
+}
+.footer-righ-text {
+  font-size: 2.4rem;
+  line-height: 1.36;
+  font-weight: 300;
+  color: #ecedf1;
+  margin-bottom: 4rem;
+}
+.btn-black {
+  background-color: #131417;
+  color: #ecedf1;
+  padding: 1rem 2rem;
+  margin-bottom: 7rem;
+}
+
+.footer-right-tools {
+  display: flex;
+  flex-direction: row;
+}
+.tools {
+  display: flex;
+  gap: 2rem;
+}
+.tools li {
+  list-style: none;
+}
+.tools a {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+}
