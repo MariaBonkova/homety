@@ -10,6 +10,13 @@ body {
   font-weight: 400;
   max-width: 100%;
 }
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+
+  /*когато сложим за мобилното меню трансформ-тразнишън започва да се склорва екрана на ляво и така го премахва скролването */
+  /*това се отнася след това до оразмеряването с rem. 1rem=10px */
+}
 
 .container {
   padding: 1.6rem 5.4rem;

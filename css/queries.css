@@ -1,0 +1,87 @@
+@media (max-width: 91em) {
+  /*1457px*/
+  .number {
+    font-size: 1.6rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .design-text {
+    margin-left: 6rem;
+  }
+  .section-hacks {
+    padding-left: 5rem;
+  }
+  .large {
+    width: 35rem;
+    height: 25rem;
+  }
+  .list-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 85em) {
+  /*1362px*/
+  .homepage-header {
+    font-size: 1.9rem;
+  }
+  .homepage-left-side a:link,
+  .homepage-left-side a:visited {
+    font-size: 1rem;
+  }
+  .hero-header {
+    font-size: 1.6rem;
+  }
+  .hero-text {
+    font-size: 0.77rem;
+  }
+  .design-head {
+    font-size: 2rem;
+  }
+  .number {
+    font-size: 1.2rem;
+  }
+  .design-text {
+    font-size: 0.8rem;
+  }
+  .planning-header {
+    font-size: 2.3rem;
+    line-height: 1.3;
+  }
+  .planning-price span {
+    font-size: 1.5rem;
+  }
+  .planning-decrative-text {
+    font-size: 0.85rem;
+  }
+  .new-york-image-container p {
+    font-size: 0.8rem;
+  }
+  .new-york-header {
+    font-size: 1.8rem;
+  }
+
+  .new-york-link {
+    font-size: 0.65rem;
+  }
+  .expert-text {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+  .experts-images-container {
+    gap: 1.4rem;
+  }
+  .dream-content h2 {
+    font-size: 1.8rem;
+  }
+  .dream-content p {
+    color: #ecedf1;
+    font-size: 0.9rem;
+  }
+  .footer-righ-text {
+    font-size: 2rem;
+  }
+  .projects-images-containers {
+    row-gap: 3rem;
+  }
+}
