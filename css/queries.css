@@ -15,6 +15,17 @@
     width: 35rem;
     height: 25rem;
   }
+  .small {
+     width: 18rem;
+  height: 13rem;
+}
+
+
+.hachs-text {
+  font-size: 1rem;
+ 
+}
+  }
   .list-text {
     font-size: 1rem;
   }
@@ -84,4 +95,15 @@
   .projects-images-containers {
     row-gap: 3rem;
   }
+
+   .partners-list {
+    padding: 3rem 1rem;
+  }
+
+  .partner-image {
+    padding: 1rem;
+  }
+
+   
+  
 }
