@@ -16,15 +16,11 @@
     height: 25rem;
   }
   .small {
-     width: 18rem;
-  height: 13rem;
-}
-
-
-.hachs-text {
-  font-size: 1rem;
- 
-}
+    width: 18rem;
+    height: 13rem;
+    .hachs-text {
+      font-size: 1rem;
+    }
   }
   .list-text {
     font-size: 1rem;
@@ -40,6 +36,7 @@
   .homepage-left-side a:visited {
     font-size: 1rem;
   }
+
   .hero-header {
     font-size: 1.6rem;
   }
@@ -95,15 +92,22 @@
   .projects-images-containers {
     row-gap: 3rem;
   }
-
-   .partners-list {
-    padding: 3rem 1rem;
-  }
-
   .partner-image {
-    padding: 1rem;
+    padding: 2rem;
   }
-
-   
-  
+}
+@media (max-width: 83em) {
+  .btn-contact-us {
+    font-size: 0.74rem;
+  }
+}
+@media (max-width: 480px) {
+  .partners-list {
+    grid-template-columns: repeat(
+      3,
+      1fr
+    ); /* при много малки екрани намаляваме на 3 колони */
+    grid-template-rows: repeat(4, 1fr); /* и съответно 4 реда */
+    padding: 1rem 0.5rem;
+  }
 }
