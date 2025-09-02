@@ -230,7 +230,7 @@
   }
 }*/
 
-@media (min-width: 185em) {
+@media (max-width: 185em) {
   .container {
     padding: 0rem 15rem;
   }
