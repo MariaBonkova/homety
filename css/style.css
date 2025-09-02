@@ -1,11 +1,11 @@
 /*navigation*/
 
 .logo {
-  height: 100%;
+  max-width: 120%;
   cursor: pointer;
 }
 .logo-img {
-  max-width: 100%;
+  width: 5rem;
   display: inline-block;
 }
 .navbar-items {
@@ -51,11 +51,11 @@
 /*section homepage*/
 
 .section-homepage {
-  margin: 14rem 0 7.2rem 0;
+  margin: 7rem 0;
   gap: 5rem;
 }
 .homepage-left-side {
-  width: 100%;
+  max-width: 100%;
 }
 
 .homepage-image {
@@ -94,7 +94,7 @@
 /*section-hero*/
 .section-hero {
   max-width: 100%;
-  margin-bottom: 8.4rem;
+  margin-bottom: 4.4rem;
 }
 .hero-image {
   width: 100%;
@@ -158,33 +158,33 @@
   margin-bottom: 4.5rem;
   line-height: 1.36;
 }
+.design-content {
+  padding: 0 5rem;
+}
 .design-text {
-  margin-left: 4rem;
+  font-size: 1.8rem;
   color: #777;
-  margin-bottom: 8rem;
 }
 
 .design-image {
-  width: 50%;
+  display: flex;
+  width: 100%;
   object-fit: cover;
+  grid-column-gap: 2rem;
 }
 .design-img {
-  width: 40rem;
-}
-.design-content {
-  align-items: start;
+  width: 100%;
 }
 
 .design-head {
-  font-size: 2.4rem;
+  font-size: 3.5rem;
   font-weight: 300;
 }
 
 .number {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 300;
   line-height: 1.36rem;
-  margin-right: 2rem;
 }
 
 /* section planning*/
@@ -197,7 +197,6 @@
 .section-planning {
   width: 100%;
   min-width: 100vw;
-  max-width: 1200px; /* максимална ширина за комфортна четимост */
   background-color: #131417;
   box-sizing: border-box;
   padding: 0;
@@ -217,17 +216,16 @@
   border: solid 1px #4d4e50;
   text-align: center;
   align-items: center;
-  padding: 2.8rem;
+  padding: 5rem;
   box-sizing: border-box;
   max-width: 100%;
   transition: padding 0.3s ease;
 }
 
 .partner-image img {
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
   width: 100%;
+  height: 5rem;
+  object-fit: contain;
   display: block;
 }
 
@@ -331,7 +329,7 @@
   display: flex;
   justify-content: center;
   gap: 0.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 5rem;
 }
 
 .new-york-link {
@@ -351,7 +349,7 @@
   font-weight: 300;
   line-height: 1;
   text-align: center;
-  margin-bottom: 4.5rem;
+  margin-bottom: 2.4rem;
 }
 
 .new-york-image-container {
@@ -359,6 +357,7 @@
   height: 100%;
   overflow: hidden;
 }
+
 .new-york-image-container p {
   font-size: 0.95rem;
   color: #777;
@@ -376,6 +375,7 @@
   object-fit: cover;
   border-radius: 45rem;
   transition: transform 0.5s ease;
+  padding: 1rem;
 }
 .new-york-image-container:hover .new-york-left-image {
   transform: scale(1.07); /* леко увеличаване при hover */
@@ -411,9 +411,9 @@
 .projects-images-containers {
   position: relative;
   grid-template-columns: repeat(2, 1fr);
-  row-gap: 3rem;
+  row-gap: 2rem;
   column-gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 4rem;
   object-fit: cover;
 }
 .project-image-container {
@@ -547,8 +547,8 @@
   width: 100%;
 }
 .dream-image img {
-  width: 38rem;
-  height: 20rem;
+  width: 100%;
+  height: 100%;
 }
 
 /*section-hacks*/
@@ -565,11 +565,11 @@
 }
 .large {
   width: 40rem;
-  height: 30rem;
+  height: 40rem;
 }
 .small {
-  width: 20rem;
-  height: 15rem;
+  width: 25rem;
+  height: 25rem;
 }
 
 .trend-image {
@@ -597,7 +597,8 @@
   margin-top: 1rem;
 }
 .arrow-position {
-  margin-bottom: 3.4rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 /*section-visit-instagram*/
