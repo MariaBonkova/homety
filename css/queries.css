@@ -360,3 +360,58 @@
     font-size: 2rem;
   }
 }
+@media (max-width: 170em) {
+  .project-image {
+    width: 75rem;
+  }
+
+  .expert-text {
+    font-size: 3.8rem;
+  }
+  .expert-image {
+    width: 15rem;
+    height: 15rem;
+  }
+  .expert-image-dog {
+    width: 30rem;
+    height: 30rem;
+  }
+  .hachs {
+    gap: 2.5rem;
+  }
+  .large {
+    width: 75rem;
+    height: 75rem;
+  }
+  .small {
+    width: 30rem;
+    height: 30rem;
+  }
+}
+@media (max-width: 170em) {
+  .btn-contact-us {
+    font-size: 0.83rem;
+    padding: 0.3rem 1rem;
+  }
+}
+@media (max-width: 170em) {
+  .btn-contact-us {
+    font-size: 0.83rem;
+    padding: 0.3rem 1rem;
+  }
+}
+@media (max-width: 159em) {
+  .project-image {
+    width: 70rem;
+  }
+}
+@media (max-width: 152em) {
+  .large {
+    width: 70rem;
+    height: auto;
+  }
+  .small {
+    width: 25rem;
+    height: auto;
+  }
+}
