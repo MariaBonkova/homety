@@ -57,7 +57,10 @@
   .planning-content,
   .planning-list,
   .projects-images-containers,
-  .experts-content {
+  .experts-content,
+  .section-dream,
+  .section-hacks,
+  .footer-container {
     grid-template-columns: 1fr !important;
     grid-template-rows: auto auto !important;
     width: 100% !important;
@@ -241,6 +244,54 @@
   }
   #expert10 {
     grid-area: expert10;
+  }
+  .section-dream {
+    padding: 4rem 1rem;
+  }
+  .dream-content {
+    grid-row: 2;
+  }
+  .dream-image {
+    grid-row: 1;
+  }
+  .section-hacks {
+    margin-bottom: 8rem;
+  }
+  .hachs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .large {
+    width: 18rem;
+    height: 15rem;
+  }
+  .small {
+    width: 18rem;
+    height: 15rem;
+  }
+  .section-visit-instagram {
+    padding: 1rem 1rem;
+  }
+
+  .visit-instagram-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .expert-text {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer-addresses {
+    margin-bottom: 1rem;
+  }
+  .footer-right-side {
+    padding: 2rem 1rem;
+  }
+  .footer-righ-text {
+    margin-bottom: 2rem;
+  }
+  .btn-black {
+    margin-bottom: 2rem;
   }
 }
 @media (min-width: 768px) {
