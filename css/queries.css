@@ -373,8 +373,9 @@
   .section-hero {
     width: 90%;
     max-width: 768px;
-    margin: 0 auto;
+    margin: 0;
     box-sizing: border-box;
+    gap: 0;
   }
 }
 @media (max-width: 1024px) {
