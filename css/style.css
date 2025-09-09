@@ -19,9 +19,9 @@
   display: inline-block;
 }
 .navbar-items {
+  width: 100%;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 6rem;
   display: none;
 }
 .navbar-item {
@@ -46,6 +46,9 @@
   padding: 1.49rem 5.4rem;
 }
 
+.btn {
+  white-space: nowrap; /* забранява пренасянето на текст */
+}
 .btn-contact-us {
   font-family: "Lexend", sans-serif;
   font-size: 0.84rem;
@@ -109,7 +112,8 @@
   max-width: 100%;
   margin-bottom: 4.4rem;
 }
-.hero-image {
+.hero-image,
+.hero-content {
   width: 100%;
   height: 100%;
 }
