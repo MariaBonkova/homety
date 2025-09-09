@@ -308,24 +308,41 @@
 }
 @media (max-width: 1024px) {
   .logo {
-    margin-right: 30rem;
+    margin-right: 28rem;
   }
   .navbar-item {
-    margin-right: 8rem;
+    margin-right: 2rem;
   }
 
-  .homepage-images {
-    display: flex;
-    margin-right: 4rem;
-  }
-
-  .homepage-header {
-    font-size: 2.5rem;
-    text-align: start;
+  .section-homepage,
+  .footer-container {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    gap: 2rem !important;
   }
   .homepage-right-image {
-    width: 35rem;
-    height: auto;
+    width: 80% !important;
+    height: auto !important;
+    object-fit: cover !important;
+    border-radius: 45rem;
+    margin-right: 5rem;
+    margin-left: 3rem;
+  }
+
+  .homepage-left-side {
+    margin-left: 3rem;
+  }
+  .homepage-header {
+    font-size: 2rem;
+  }
+  .homepage-right-image {
+    width: 20em;
+    height: 50иеп;
     object-fit: cover;
     border-radius: 45rem;
   }
@@ -343,7 +360,36 @@
     margin-top: 2.2rem;
   }
   .design-img {
-    width: 40rem;
+    width: 30rem;
+  }
+  .expert-image {
+    width: 6rem;
+    height: 6rem;
+  }
+  .expert-image-dog {
+    width: 8rem;
+    height: 8rem;
+  }
+  .large {
+    width: 14rem;
+    height: 10rem;
+  }
+  .small {
+    width: 5rem;
+    height: 3rem;
+  }
+
+  .footer-addresses {
+    margin-bottom: 1rem;
+  }
+  .footer-right-side {
+    padding: 2rem 1rem;
+  }
+  .footer-righ-text {
+    margin-bottom: 2rem;
+  }
+  .btn-black {
+    margin-bottom: 2rem;
   }
 }
 
