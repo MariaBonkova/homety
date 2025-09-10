@@ -209,12 +209,12 @@
     font-size: 1.8rem;
   }
   .expert-image {
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
   }
   .expert-image-dog {
-    width: 10rem;
-    height: 10rem;
+    width: 6rem;
+    height: 6rem;
   }
   .experts-images-container {
     justify-content: center;
@@ -307,14 +307,65 @@
   }
 }
 @media (max-width: 1024px) {
-  .logo {
-    margin-right: 28rem;
+  html,
+  body {
+    overflow-x: hidden;
+    box-sizing: border-box;
   }
+  .navbar-items {
+    display: none; /* скрити линкове */
+    position: fixed;
+    left: 0;
+    width: 70vw;
+    height: 100vh;
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+    z-index: 1000;
+  }
+  .hamburger {
+    display: block;
+    margin-left: 15rem;
+  }
+  .menu-toggle:checked ~ .navbar-items {
+    display: block;
+  }
+  .logo {
+    max-width: 50%;
+  }
+
+  /* При menu toggle checked, hamburger става хикс */
+  .menu-toggle:checked {
+    content: "✕"; /* знак за затваряне */
+    position: relative;
+    left: 10rem;
+    top: 0;
+  }
+
+  /* Стилове за navbar-items линковете */
   .navbar-item {
-    margin-right: 2rem;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+  .navbar-item li a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
   }
 
   .section-homepage,
+  .design-list,
+  .planning-content,
+  .planning-list,
+  .projects-images-containers,
+  .experts-content,
+  .section-dream,
+  .section-hacks,
   .footer-container {
     grid-template-columns: 1fr !important;
     grid-template-rows: auto auto !important;
@@ -325,58 +376,231 @@
     padding-right: 1rem !important;
     gap: 2rem !important;
   }
+  .section-new-york-dream,
+  .section-project,
+  .section-hero {
+    grid-template-columns: 1fr;
+    padding: 0;
+    width: 100% !important;
+  }
+
+  .homepage-left-side,
+  .homepage-right-side,
+  .hero-picture {
+    width: 100% !important;
+    margin-left: 3rem;
+  }
+
   .homepage-right-image {
-    width: 80% !important;
+    width: 70% !important;
     height: auto !important;
     object-fit: cover !important;
     border-radius: 45rem;
-    margin-right: 5rem;
-    margin-left: 3rem;
   }
 
-  .homepage-left-side {
-    margin-left: 3rem;
+  .hero-image {
+    width: 100% !important;
+
+    height: auto !important;
   }
+
   .homepage-header {
     font-size: 2rem;
+    text-align: start;
   }
-  .homepage-right-image {
-    width: 20em;
-    height: 50иеп;
-    object-fit: cover;
-    border-radius: 45rem;
+  .homepage-left-side a:link,
+  .homepage-left-side a:visited {
+    font-size: 0.8rem;
   }
-
-  .section-hero {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
+  .tags {
+    padding-left: 1rem;
+    gap: 0.5rem;
+  }
+  .hero-header {
+    font-size: 1.65rem;
+    margin-bottom: 1rem;
+  }
+  .text {
+    margin: 1.5rem;
+  }
+  /*section-design*/
+  .section-design {
+    padding: 0 0.5rem;
+    margin-left: 3rem;
   }
   .design-header {
-    display: block;
     max-width: 100%;
     font-size: 2.5rem;
     margin-bottom: 2rem;
     margin-top: 2.2rem;
   }
+  .design-content {
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+  .design-image {
+    display: flex;
+  }
+
   .design-img {
-    width: 30rem;
+    width: 100%;
+  }
+  /*section-planning*/
+  .partners-list {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 4rem 2.5rem;
+  }
+
+  .partner-image {
+    padding: 0.5rem;
+  }
+  .planning-list {
+    padding: 4rem;
+  }
+  .left,
+  .right {
+    border-top: none;
+  }
+  .planning-left-side,
+  .planning-right-side {
+    margin: 0 3rem;
+  }
+  .planning-header {
+    font-size: 2.5rem;
+  }
+  .list-text {
+    font-size: 1.1rem;
+    padding-top: 1rem;
+  }
+  .new-york-dream-links {
+    margin-bottom: 2rem;
+  }
+  .new-york-dream-right-side {
+    grid-row: 1;
+  }
+  .new-york-dream-left-side {
+    grid-row: 2;
+    margin-bottom: 4rem;
+  }
+
+  .new-york-image-container p {
+    margin-top: 2rem;
+  }
+  .new-york-left-image {
+    width: 70%;
+    height: auto;
+  }
+  .project-text {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-top: 4rem;
+    padding: 1rem;
+  }
+
+  .parent {
+    position: relative;
+  }
+  .project-tags a:link {
+    background-color: white;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .section-experts {
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 3rem;
+  }
+  .experts-container {
+    grid-template-columns: 1fr;
+    margin-top: 3rem;
+  }
+  .expert-text {
+    font-size: 1.8rem;
   }
   .expert-image {
-    width: 6rem;
-    height: 6rem;
+    width: 5rem;
+    height: 5rem;
   }
   .expert-image-dog {
     width: 8rem;
     height: 8rem;
   }
-  .large {
-    width: 14rem;
-    height: 10rem;
+  .experts-images-container {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, auto);
+
+    grid-template-areas:
+      "expert1 . expert2 . expert7"
+      "expert8  expert10 expert4 expert5 expert7"
+      "expert3 expert4 . expert6 .";
   }
+  #expert1 {
+    grid-area: expert1;
+  }
+  #expert2 {
+    grid-area: expert2;
+  }
+  #expert3 {
+    grid-area: expert3;
+  }
+  #expert4 {
+    grid-area: expert4;
+  }
+  #expert5 {
+    grid-area: expert5;
+  }
+  #expert6 {
+    grid-area: expert6;
+  }
+  #expert7 {
+    grid-area: expert7;
+  }
+  #expert8 {
+    grid-area: expert8;
+  }
+  #expert9 {
+    grid-area: expert9;
+  }
+  #expert10 {
+    grid-area: expert10;
+  }
+  .section-dream {
+    padding: 4rem 1rem;
+  }
+  .dream-content {
+    grid-row: 2;
+  }
+  .dream-image {
+    grid-row: 1;
+  }
+  .section-hacks {
+    margin-bottom: 8rem;
+  }
+  .hachs {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 3rem;
+  }
+  .large,
   .small {
-    width: 5rem;
-    height: 3rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .section-visit-instagram {
+    padding: 1rem 1rem;
+  }
+
+  .visit-instagram-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .expert-text {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
   }
 
   .footer-addresses {
