@@ -67,8 +67,8 @@ html {
 .icon-arrow::after {
   content: "See all";
   position: absolute;
-  top: 100%; /* показва надписа отгоре на стрелката */
-  left: 50%;
+  top: 5rem; /* показва надписа отгоре на стрелката */
+  right: 6rem;
   transform: translateX(-50%);
   opacity: 0;
   transition: opacity 0.3s ease, transform 0.3s ease;
